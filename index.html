@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+		<!--#info: css script to represent planets information -->
+		<!--#play: css script with button for planet information image playback -->
+         <!--#universe: css script for solar system model screen switching button-->
+
+		
+	<head>
+		<title>My first three.js app</title>
+
+		<style>
+			body { margin: 0;}
+			canvas { display: block;}
+            #info {
+				position: absolute;
+				top: 33%;
+				bottom: 33%;
+				left: 60%;
+				right: 23%;
+				width: 20%;
+				height: 50%;
+				text-align: left-side;
+				z-index: 100;
+				display:block;
+				color : white;
+			}
+        </style>
+            <button id="play" type="button">Planet info</button>
+			<button id="universe" type="button">Solar system model</button>
+			<style>
+
+#play {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 10px;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+#play:hover {
+  background: #444;
+}
+#play:focus {
+  outline: none;
+}
+
+#universe {  position: absolute;
+  left: 100px;
+  top: 10px;
+  padding: 10px;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+#universe:hover {
+  background: #444;
+}
+#universe:focus {
+  outline: none;
+}
+
+			</style>
+
+	</head>
+	<body>
+        <div id="info"></div>
+        <script type="module" src="test.js"></script>
+        
+	</body>
+</html>
